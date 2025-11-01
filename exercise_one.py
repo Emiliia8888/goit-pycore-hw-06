@@ -69,8 +69,7 @@ class AddressBook(UserDict):
         pass
 
     def delete(self, param):
-        deleted = self.data.pop(param, None)
-        print(f"Deleted: {deleted}")
+        self.data.pop(param, None)
 
 
 if __name__ == "__main__":
